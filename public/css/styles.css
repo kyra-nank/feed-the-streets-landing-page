@@ -1,3 +1,20 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Carter One', sans-serif;
+}
+
+.btn, .btn:active, .btn:visited {
+  background-color: #9113C3 !important;
+  color: #fff !important;
+}
+
+.btn:hover {
+  background-color: #77119F !important;
+}
+
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
@@ -9,7 +26,8 @@
     flex: 0 0 auto;
     width: 50%;
   }
-  .text-lg-start{
+
+  .text-lg-start {
     text-align: left !important;
   }
 }
@@ -30,10 +48,6 @@
   position: relative;
 }
 
-/* .gx-5 {
-  --bs-gutter-x: 3rem;
-} */
-
 .align-items-center {
   align-items: center;
 }
@@ -43,8 +57,7 @@
   max-width: 100%;
   width: 100%;
   flex-wrap: wrap;
-  margin-top: calc(var(--bs-gutter-y) * -1 );
+  margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -0.5);
   margin-left: calc(var(--bs-gutter-x) * -0.5);
-
 }
