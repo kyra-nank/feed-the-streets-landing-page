@@ -1,0 +1,25 @@
+{
+  "name": "feedthestreets",
+  "version": "1.0.0",
+  "description": "Email capture website to validate idea.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyra-nank/feedthestreets.git"
+  },
+  "author": "Kyra Nankivell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyra-nank/feedthestreets/issues"
+  },
+  "homepage": "https://github.com/kyra-nank/feedthestreets#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
