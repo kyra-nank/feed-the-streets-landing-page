@@ -1,8 +1,21 @@
-body {
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+body, .p-text {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, .header {
   font-family: 'Carter One', sans-serif;
 }
 
@@ -21,7 +34,7 @@ h1 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -39,6 +52,11 @@ h1 {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
+}
+
+.px-15 {
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
 }
 
 .picture {
