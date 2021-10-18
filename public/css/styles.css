@@ -1,0 +1,50 @@
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .text-lg-start{
+    text-align: left !important;
+  }
+}
+
+.dflex {
+  display: flex !important;
+}
+
+.px-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* .gx-5 {
+  --bs-gutter-x: 3rem;
+} */
+
+.align-items-center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1 );
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+
+}
