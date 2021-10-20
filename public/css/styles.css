@@ -34,7 +34,7 @@ h1, .header {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 500px) {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -43,6 +43,17 @@ h1, .header {
   .text-lg-start {
     text-align: left !important;
   }
+}
+
+@media (max-width: 765px) {
+  .btn {
+    width: 100%;
+  }
+
+  input {
+  text-align: center;
+  }
+
 }
 
 .dflex {
