@@ -47,11 +47,11 @@ async function run() {
   }
 }
 
-
+run();
 
 });
 
-run();
+
 
 // failure route for the Try Again button
 app.post('/failure', function(req, res) {
