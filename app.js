@@ -29,7 +29,8 @@ app.post('/', function(req, res) {
   const jsonData = JSON.stringify(data); // turn JS object into JSON
 
   // from main MailChimp endpoint - find in API docs
-  url = 'https://us6.api.mailchimp.com/3.0/lists/' + process.env.MAILCHIMP_LIST_ID; // append 'lists' and list ID
+  url = process.env.MAILCHIMP_URI
+  // url = 'https://us6.api.mailchimp.com/3.0/lists/' + process.env.MAILCHIMP_LIST_ID; // append 'lists' and list ID
 
   const options = {
     method: 'POST',
