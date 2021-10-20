@@ -29,17 +29,15 @@ app.post('/', function(req, res) {
   const jsonData = JSON.stringify(data); // turn JS object into JSON
 
   // from main MailChimp endpoint - find in API docs
-  url = 'https://us6.api.mailchimp.com/3.0/lists/'+process.env.MAILCHIMP_LIST_ID; // append 'lists' and list ID
+  url = 'https://us6.api.mailchimp.com/3.0/lists/' + process.env.MAILCHIMP_LIST_ID; // append 'lists' and list ID
 
   const options = {
     method: 'POST',
-    auth: 'kyra_nank:'+process.env.MAILCHIMP_API_KEY // any username, and my api key
+    auth: 'kyra_nank:' + process.env.MAILCHIMP_API_KEY // any username, and my api key
   }
 
   // response will be from MailChimp
   const request = https.request(url, options, function(response) {
-
-
 
     response.on('data', function(data) {
 
@@ -61,9 +59,9 @@ app.post('/', function(req, res) {
 
 // failure route for the Try Again button
 app.post('/failure', function(req, res) {
-  res.redirect('/');    // redirect back to root
+  res.redirect('/'); // redirect back to root
 });
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log('Server running on port 3000.')
+  console.log('Server running.')
 })
